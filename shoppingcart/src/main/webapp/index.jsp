@@ -10,6 +10,8 @@
     <meta name="author" content="">
 
     <title>Creative - Start Bootstrap Theme</title>
+    
+    
 
     <!-- Bootstrap Core CSS -->
     <link href="resource/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
