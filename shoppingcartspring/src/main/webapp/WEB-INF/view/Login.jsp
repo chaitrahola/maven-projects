@@ -56,7 +56,7 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 30%;
 }
 
 .cancelbtn {
@@ -79,6 +79,8 @@ img.avatar {
 padding: 10px;
 }
 
+
+
 span.psw {
     float: right;
     padding-top: 16px;
@@ -96,7 +98,7 @@ span.psw {
 }
 h4 {
     color: #e6f2ff;
- text-align: center;
+ 
 
 }
 body {
@@ -123,13 +125,13 @@ body {
                         <a class="page-scroll" href="Login">Login</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Register">Register</a>
+                        <a class="page-scroll" href="Register">Register</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#Contact">Contact</a>
+                        <a class="page-scroll" href="Contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#About">About</a>
+                        <a class="page-scroll" href="About">About</a>
                     </li>
                 </ul>
             </div>
@@ -142,19 +144,20 @@ body {
 
 
 
-<form action="action_page.php">
+<form action="validate">
   <div class="imgcontainer">
-    <img src="us.png" alt="Avatar" class="avatar">
+    <img src="us.png" alt="usericon" class="avatar">
   </div>
 
   <div class="container">
     <h4><label><b>Username</b></label></h4>
-    <input type="text"  placeholder="Enter Username" name="uname" required><br>
+    <input type="text"  placeholder="Enter Username" name="id" required><br>
 
     <h4><label><b>Password</b></label></h4>
-    <input type="password" placeholder="Enter Password" name="psw" required><br>
+    <input type="password" placeholder="Enter Password" name="password" required><br>
+    <br>
         
-    <button type="submit" ><center>Login</center></button>
+    <button type="submit" >Login</button><br>
     <input type="checkbox" checked="checked"> Remember me
   </div>
 
