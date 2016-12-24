@@ -11,51 +11,74 @@ import com.niit.dao.UserDAO;
 public class HomeController {
 	
 	@RequestMapping("/")
-	public String homepage()
+	public String getindex()
 	{
-		System.out.println("Executing the method homepage");
-		return "home";
+		System.out.println(" homepage");
+		return "index";
 	}
-	@RequestMapping("Login")
-	public ModelAndView ShowLoginPage()
+ 
+	@RequestMapping("/index")
+	public String getindex1()
 	{
-		ModelAndView mv= new ModelAndView("Login");
-		mv.addObject("msg","you clicked login link");
-		return mv;
-     }
-	@RequestMapping("Register") 
-	public ModelAndView ShowRegisterPage()
-	{
-		ModelAndView mv= new ModelAndView("home");
-		mv.addObject("msg","you have been succesfully registered");
-		mv.addObject("ShowRegisterPage","true");
-		return mv;
-		}
-	
-	@RequestMapping("validate")
-	public ModelAndView Validate(@RequestParam("id")String id,@RequestParam("password")String password)
-	
-	{
-		System.out.println("invalid credentials");
-		System.out.println("id:"+id);
-		System.out.println("pwd:"+ password);
-		ModelAndView mv= new ModelAndView("index");
-		
-		UserDAO userDAO=new UserDAO();
-		if(userDAO.isValidCredentials(id,password)==true)
-		{
-			mv.addObject("successmsg","you have successfully logged in");
-			
-		}
-		else
-		{
-			mv.addObject("errormsg","inavlid credentials....please try loggin in again");
-			
-		}
-		return mv;
-		
+		System.out.println(" homepage");
+		return "index";
 	}
+	@RequestMapping("/404")
+	public String get404()
+	{
+		System.out.println("404 page");
+		return "404";
+	}
+
+	@RequestMapping("/about")
+	public String getabout()
+	{
+		System.out.println("about page");
+		return "about";
+	}
+
+	@RequestMapping("/careers")
+	public String getcareers()
+	{
+		System.out.println("careers page");
+		return "careers";
+	}
+
+	@RequestMapping("/contact")
+	public String getcontact()
+	{
+		System.out.println("contact page");
+		return "contact";
+	}
+
+	@RequestMapping("/login")
+	public String getlogin()
+	{
+		System.out.println("login page");
+		return "login";
+	}
+
+	@RequestMapping("/register")
+	public String getregister()
+	{
+		System.out.println("register page");
+		return "register";
+	}
+
+	@RequestMapping("/single")
+	public String getsingle()
+	{
+		System.out.println("single page");
+		return "single";
+	}
+
+	@RequestMapping("/wishlist")
+	public String getwishlist()
+	{
+		System.out.println("wishlist page");
+		return "wishlist";
+	}
+
 	
 	
 }
-

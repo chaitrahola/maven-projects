@@ -1,172 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE HTML>
+<html>
 <head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <title>Creative - Start Bootstrap Theme</title>
-    
-    
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="resource/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="resource/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="resource/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="resource/css/creative.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<title>Fashionpress an E-Commerce online Shopping Category Flat Bootstarp responsive Website Template| Login :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="resource/css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="resource/css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="resource/js/jquery-1.11.1.min.js"></script>
 </head>
-<style>
-    border: 3px solid #f1f1f1;
-}
-
-input[type=text], input[type=password] {
-    
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 30%;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 15%;
-    border-radius: 25%;
-}
-
-.container {
-padding: 10px;
-}
-
-
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-h4 {
-    color: #e6f2ff;
- 
-
-}
-body {
-    background-image: url("2.jpeg");
-}
-</style>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="Login">Login</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="Register">Register</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="Contact">Contact</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="About">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-
-
-
-
-<form action="validate">
-  <div class="imgcontainer">
-    <img src="us.png" alt="usericon" class="avatar">
-  </div>
-
+<body>
+<div class="header">
+	<div class="header_top">
+		<div class="container">
+			<div class="logo">
+				<a href="index"><img src="images/logo.png" alt=""/></a>
+			</div>
+			<ul class="shopping_grid">
+			      <a href="#"><li>Join</li></a>
+			      <a href="login"><li>Sign In</li></a>
+			      <a href="#"><li><span class="m_1">Shopping Bag</span>&nbsp;&nbsp;(0) &nbsp;<img src="images/bag.png" alt=""/></li></a>
+			      <div class="clearfix"> </div>
+			</ul>
+		    <div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="h_menu4"><!-- start h_menu4 -->
+		<div class="container">
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li><a href="index" data-hover="Home">Home</a></li>
+					<li><a href="about" data-hover="About Us">About Us</a></li>
+					<li><a href="careers" data-hover="Careers">Careers</a></li>
+					<li><a href="contact" data-hover="Contact Us">Contact Us</a></li>
+					<li><a href="404" data-hover="Company Profile">Company Profile</a></li>
+					<li><a href="register" data-hover="Company Registration">Company Registration</a></li>
+					<li><a href="wishlist" data-hover="Wish List">Wish List</a></li>
+				 </ul>
+				 <script type="text/javascript" src="js/nav.js"></script>
+	      </div><!-- end h_menu4 -->
+     </div>
+</div>
+<div class="column_center">
   <div class="container">
-    <h4><label><b>Username</b></label></h4>
-    <input type="text"  placeholder="Enter Username" name="id" required><br>
-
-    <h4><label><b>Password</b></label></h4>
-    <input type="password" placeholder="Enter Password" name="password" required><br>
-    <br>
-        
-    <button type="submit" >Login</button><br>
-    <input type="checkbox" checked="checked"> Remember me
+	<div class="search">
+	  <div class="stay">Search Product</div>
+	  <div class="stay_right">
+		  <input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+		  <input type="submit" value="">
+	  </div>
+	  <div class="clearfix"> </div>
+	</div>
+    <div class="clearfix"> </div>
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
+</div>
+<div class="about">
+  <div class="container">
+         <div class="register">
+			   <div class="col-md-6 login-left">
+			  	 <h3>NEW CUSTOMERS</h3>
+				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+				 <a class="acount-btn" href="register">Create an Account</a>
+			   </div>
+			   <div class="col-md-6 login-right">
+			  	<h3>REGISTERED CUSTOMERS</h3>
+				<p>If you have an account with us, please log in.</p>
+				<form>
+				  <div>
+					<span>Email Address<label>*</label></span>
+					<input type="text"> 
+				  </div>
+				  <div>
+					<span>Password<label>*</label></span>
+					<input type="text"> 
+				  </div>
+				  <a class="forgot" href="#">Forgot Your Password?</a>
+				  <input type="submit" value="Login">
+			    </form>
+			   </div>	
+			   <div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="footer_bg">
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 f_grid1">
+			<h3>About</h3>
+			<a href="#"><img src="images/logo.png" alt=""/></a>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<div class="col-md-3 f_grid1 f_grid2">
+			<h3>Follow Us</h3>
+			<ul class="social">
+				<li><a href=""> <i class="fb"> </i><p class="m_3">Facebook</p><div class="clearfix"> </div></a></li>
+			    <li><a href=""><i class="tw"> </i><p class="m_3">Twittter</p><div class="clearfix"> </div></a></li>
+				<li><a href=""><i class="google"> </i><p class="m_3">Google</p><div class="clearfix"> </div></a></li>
+				<li><a href=""><i class="instagram"> </i><p class="m_3">Instagram</p><div class="clearfix"> </div></a></li>
+			</ul>
+		</div>
+		<div class="col-md-6 f_grid3">
+			<h3>Contact Info</h3>
+			<ul class="list">
+				<li><p>Phone : 1.800.254.5487</p></li>
+				<li><p>Fax : 1.800.254.2548</p></li>
+				<li><p>Email : <a href="mailto:info(at)fashionpress.com"> info(at)fashionpress.com</a></p></li>
+			</ul>
+			<ul class="list1">
+				<li><p>Aliquam augue a bibendum ipsum diam, semper porttitor libero elit egestas gravida, ut quam, nunc taciti</p></li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="footer_bottom">
+       	<div class="container">
+       		<div class="cssmenu">
+				<ul>
+					<li class="active"><a href="login">Privacy Policy</a></li> .
+					<li><a href="checkout">Terms of Service</a></li> .
+					<li><a href="checkout">Creative Rights Policy</a></li> .
+					<li><a href="login">Contact Us</a></li> .
+					<li><a href="register">Support & FAQ</a></li>
+				</ul>
+			</div>
+			<div class="copy">
+			    <p>&copy;  2015 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
+		    </div>
+		    <div class="clearfix"> </div>
+       	</div>
+</div>
 </body>
-</html>
-   
+</html>		
