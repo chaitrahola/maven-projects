@@ -1,0 +1,4 @@
+com\niit\backend\dao\UserDAO.class
+com\niit\backend\daoimpl\UserDAOImpl.class
+com\niit\backend\config\ApplicationContextconfig.class
+com\niit\backend\model\User.class
