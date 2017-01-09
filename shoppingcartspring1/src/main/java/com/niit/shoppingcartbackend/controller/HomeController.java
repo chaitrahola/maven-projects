@@ -14,7 +14,8 @@ public class HomeController {
 		System.out.println(" homepage");
 		return "index";
 	}
- 
+	
+  
 	@RequestMapping("/index")
 	public String getindex1()
 	{
@@ -49,12 +50,7 @@ public class HomeController {
 		return "product";
 	}
 
-	@RequestMapping("/register")
-	public String getregister()
-	{
-		System.out.println("register page");
-		return "register";
-	}
+	
 
 	@RequestMapping("/single")
 	public String getsingle()

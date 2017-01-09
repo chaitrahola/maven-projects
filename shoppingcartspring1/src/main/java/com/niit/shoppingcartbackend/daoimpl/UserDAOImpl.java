@@ -1,4 +1,4 @@
-
+/*
 
 package com.niit.shoppingcartbackend.daoimpl;
 
@@ -77,4 +77,4 @@ public User validate(String id, String password) {
 	// TODO Auto-generated method stub
 	return null;
 }
-}
+}*/

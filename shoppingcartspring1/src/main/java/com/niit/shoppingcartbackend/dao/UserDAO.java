@@ -1,4 +1,4 @@
-package com.niit.shoppingcartbackend.dao;
+/*package com.niit.shoppingcartbackend.dao;
 
 import java.util.List;
 
@@ -14,10 +14,11 @@ public interface UserDAO {
 	
 	public User get(String id);    // getting user based on id
 	
-	public User validate(String id,String password);   /* validating the user and checking the role(User,Admin or supplier)
+	public User validate(String id,String password);    validating the user and checking the role(User,Admin or supplier)
 
-	                                                   if it is a valid user it will return "user",else will return "NULL"  */
+	                                                   if it is a valid user it will return "user",else will return "NULL"  
 	public boolean save(User user); // Save the details of "N" no of fields entered
 	
 	public boolean update(User user); // update the details "N" no of fields entered
 }
+*/

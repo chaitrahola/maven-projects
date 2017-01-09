@@ -1,4 +1,4 @@
-package com.niit.shoppingcartbackend.configuration;
+/*package com.niit.shoppingcartbackend.configuration;
 
 import java.util.Properties;
 
@@ -16,7 +16,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.niit.shoppingcartbackend.model.Category;
 import com.niit.shoppingcartbackend.model.Product;
 import com.niit.shoppingcartbackend.model.Supplier;
-import com.niit.shoppingcartbackend.model.User;
+import com.niit.shoppingcartbackend.model.Users;
+
 @Configuration
 @ComponentScan("com.niit.shoppingcartbackend")
 @EnableTransactionManagement
@@ -51,7 +52,7 @@ public class ApplicationContextconfig {
     sessionBuilder.addAnnotatedClasses(Category.class); // Other domains
     sessionBuilder.addAnnotatedClasses(Product.class);
     sessionBuilder.addAnnotatedClasses(Supplier.class);
-    sessionBuilder.addAnnotatedClasses(User.class);
+    sessionBuilder.addAnnotatedClasses(Users.class);
 return sessionBuilder.buildSessionFactory();
     }
 	@Autowired
@@ -67,3 +68,4 @@ return sessionBuilder.buildSessionFactory();
 
 }
 
+*/

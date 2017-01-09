@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 <html>
+<%-- <%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %> --%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -47,40 +49,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class=" container">
 <div class=" register">
 	
-		  	  <form action="#" method="post">
+		  	  <form:form action="/register" method="post" CommandName="UsersDetail">
 				 <div class="col-md-6 register-top-grid">
 					<h3>Personal infomation</h3>
 					 <div>
 						<span>First Name</span>
-						<input type="text"> 
+						<form:input type="text" placeholder="Enter First name" path="FirstName" /> 
 					 </div>
 					 <div>
 						<span>Last Name</span>
-						<input type="text"> 
+						<form:input type="text" placeholder="Enter Last name" path="LastName" /> 
+					 </div>
+					 <div>
+						<span>User Name</span>
+						<form:input type="text" placeholder="Enter User name" path="LastName" /> 
 					 </div>
 					 <div>
 						 <span>Email Address</span>
-						 <input type="text"> 
+						 <form:input type="text" placeholder="Enter Email address" path="userEmail"/> 
 					 </div>
-					   <a class="news-letter" href="#">
+					 <div>
+						 <span>User Phone </span>
+						 <form:input type="text" placeholder="Enter userPhone number" path="userPhone"/> 
+					 </div>
+					   <!-- <a class="news-letter" href="#">
 						 <label class="checkbox"><input type="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
-					   </a>
+					   </a> -->
 					 </div>
 				     <div class="col-md-6 register-bottom-grid">
 						    <h3>Login information</h3>
 							 <div>
 								<span>Password</span>
-								<input type="password">
+								<form:input type="password" placeholder="Enter password " path="password"/>
 							 </div>
 							 <div>
 								<span>Confirm Password</span>
-								<input type="password">
+								<form:input type="password"placeholder="Confirm password" path="password"/>
 							 </div>
 							 <input type="submit" value="submit">
 							
 					 </div>
 					 <div class="clearfix"> </div>
-				</form>
+				</form:form>
 			</div>
 </div>
 <!--//content-->
