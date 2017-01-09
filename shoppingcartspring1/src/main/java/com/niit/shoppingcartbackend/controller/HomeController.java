@@ -15,6 +15,12 @@ public class HomeController {
 		return "index";
 	}
 	
+	@RequestMapping("/Registrationsucess")
+	public String getRegistrationsucess()
+	{
+		System.out.println(" Registrationsucess");
+		return "index";
+	}
   
 	@RequestMapping("/index")
 	public String getindex1()

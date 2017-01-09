@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <%-- <%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %> --%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -49,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class=" container">
 <div class=" register">
 	
-		  	  <form:form action="/register" method="post" CommandName="UsersDetail">
+		  	  <form:form action="/register" method="post" commandName="usersDetail">
 				 <div class="col-md-6 register-top-grid">
 					<h3>Personal infomation</h3>
 					 <div>
@@ -84,7 +85,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							 </div>
 							 <div>
 								<span>Confirm Password</span>
-								<form:input type="password"placeholder="Confirm password" path="password"/>
+								<form:input type="password" placeholder="Confirm password" path="password"/>
 							 </div>
 							 <input type="submit" value="submit">
 							

@@ -1,4 +1,4 @@
-package com.niit.shoppingcartbackend.test;
+/*package com.niit.shoppingcartbackend.test;
 
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -22,10 +22,11 @@ public class TestUserDAO {
 		user.setMail("abcde");
 		user.setContact("abcde");
 		user.setRole("grg");
-		/*Userdao.save(user);*/
-		/*Userdao.validate("1", "13");*/
-		/*Userdao.update(user);*/
+		Userdao.save(user);
+		Userdao.validate("1", "13");
+		Userdao.update(user);
 		Userdao.get("1");
 		
 	}
 }
+*/

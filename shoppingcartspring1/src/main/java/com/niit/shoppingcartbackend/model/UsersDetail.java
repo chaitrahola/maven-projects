@@ -38,7 +38,7 @@ public class UsersDetail {
 	@NotEmpty (message = "Password can not be empty.")
     private String password;
 
-    private boolean enabled;
+   /* private boolean enabled;*/
  
     public String getUserEmail() {
 		return userEmail;
@@ -74,13 +74,13 @@ public class UsersDetail {
         this.password = password;
     }
 
-    public boolean isEnabled() {
+    /*public boolean isEnabled() {
         return enabled;
     }
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
-    }
+    }*/
 
    
     public int getUserId() {

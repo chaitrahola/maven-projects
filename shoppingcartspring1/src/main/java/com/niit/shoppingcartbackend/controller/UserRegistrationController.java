@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.shoppingcartbackend.dao.UsersDetailDao;
@@ -20,6 +21,7 @@ import com.niit.shoppingcartbackend.model.UsersDetail;
  /* This Controller is used to register user into the system
  */
 @Controller
+@SessionAttributes
 public class UserRegistrationController {
 
 	@Autowired
@@ -45,7 +47,7 @@ public class UserRegistrationController {
 			BindingResult result) {
 		
 		if (result.hasErrors()) {					
-			ModelAndView model=new ModelAndView("customerRegister");
+			ModelAndView model=new ModelAndView("register");
 			model.addObject("message", "You have entered invalid details");
 			
 			System.out.println("Page has errors");
@@ -78,7 +80,7 @@ public class UserRegistrationController {
 		}
 //		usersDetail.setEnabled(true);
 		usersDetailDAO.addUser(usersDetail);
-		ModelAndView model=new ModelAndView("index");
+		ModelAndView model=new ModelAndView("Registrationsucess");
 		return model;
 	}
 }

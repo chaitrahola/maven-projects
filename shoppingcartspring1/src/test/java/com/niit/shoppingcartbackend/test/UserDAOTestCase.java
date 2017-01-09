@@ -1,4 +1,4 @@
-package com.niit.shoppingcartbackend.test;
+/*package com.niit.shoppingcartbackend.test;
 
 import org.junit.BeforeClass;
 import org.junit.Test; 
@@ -84,3 +84,4 @@ public class UserDAOTestCase
 	
 
 }
+*/
