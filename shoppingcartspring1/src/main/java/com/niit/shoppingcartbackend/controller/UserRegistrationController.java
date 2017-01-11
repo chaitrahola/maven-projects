@@ -21,7 +21,7 @@ import com.niit.shoppingcartbackend.model.UsersDetail;
  /* This Controller is used to register user into the system
  */
 @Controller
-@SessionAttributes
+/*@SessionAttributes*/
 public class UserRegistrationController {
 
 	@Autowired
@@ -55,6 +55,10 @@ public class UserRegistrationController {
 		}
 		
 		List<UsersDetail> usersDetailList = usersDetailDAO.getAllUsers();
+	System.out.println(usersDetail.getFirstName());
+		{
+			
+		}
 
         for (int i=0; i< usersDetailList.size(); i++) {
         	ModelAndView model=new ModelAndView("register");
@@ -73,12 +77,12 @@ public class UserRegistrationController {
                 return model;
             }
         }
-		if(usersDetailDAO.isValidUser(usersDetail.getUsername())==false){
+		/*if(usersDetailDAO.isValidUser(usersDetail.getUsername())==false){
 			ModelAndView model=new ModelAndView("register");
 			model.addObject("usernameError", "User name already exists");
 			return model;
-		}
-//		usersDetail.setEnabled(true);
+		}*/
+		//usersDetail.setEnabled(true);
 		usersDetailDAO.addUser(usersDetail);
 		ModelAndView model=new ModelAndView("Registrationsucess");
 		return model;

@@ -5,6 +5,10 @@ import javax.validation.constraints.*;
 
 import org.hibernate.validator.constraints.*;
 
+/**
+ * @author admin
+ *
+ */
 @Entity
 public class UsersDetail {
 	@Id
@@ -12,11 +16,11 @@ public class UsersDetail {
     private int userId;
 
 	@Size(min=3,max=30, message = "Size can be between 3 and 30")
-	@NotEmpty (message = "User full name can not be empty.")
+	@NotEmpty (message = "User first name can not be empty.")
     private String FirstName;
 	
 	@Size(min=2,max=30, message = "Size can be between 2 and 30")
-	@NotEmpty (message = "User full name can not be empty.")
+	@NotEmpty (message = "User lastName name can not be empty.")
     private String LastName;
 
 	@Size(min=3,max=30, message="Username Size can be between 2 and 30")
@@ -38,8 +42,16 @@ public class UsersDetail {
 	@NotEmpty (message = "Password can not be empty.")
     private String password;
 
-   /* private boolean enabled;*/
- 
+    /*public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	private boolean enabled;
+ */
     public String getUserEmail() {
 		return userEmail;
 	}
@@ -67,21 +79,14 @@ public class UsersDetail {
     public String getPassword() {
         return password;
     }
-    public String getconfirmPassword() {
-        return password;
-    }
+    
     public void setPassword(String password) {
         this.password = password;
     }
 
-    /*public boolean isEnabled() {
-        return enabled;
-    }
+    
 
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }*/
-
+   
    
     public int getUserId() {
   		return userId;

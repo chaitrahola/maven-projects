@@ -16,14 +16,14 @@ import com.niit.shoppingcartbackend.model.Users;
 import com.niit.shoppingcartbackend.model.UsersDetail;
 
 @Repository("usersDetailDAO")
-@Transactional
+
 public class UsersDetailDaoImpl implements UsersDetailDao{
 
     @Autowired
     private SessionFactory sessionFactory;
 
     
- 
+    @Transactional
     public void addUser(UsersDetail usersDetail) {
     	
         Session session = sessionFactory.openSession();
@@ -38,10 +38,11 @@ public class UsersDetailDaoImpl implements UsersDetailDao{
 
         UserRole newUserRole = new UserRole();
         newUserRole.setUsername(usersDetail.getUsername());
-        newUserRole.setRole("ROLE_USER");
+        newUserRole.setRole("ROLE_ADMIN");
         
         session.saveOrUpdate(newUser);
         session.saveOrUpdate(newUserRole);
+        session.saveOrUpdate(usersDetail);
        /*
         Cart newCart = new Cart();
         newCart.setUsersDetail(usersDetail);
@@ -71,12 +72,12 @@ public class UsersDetailDaoImpl implements UsersDetailDao{
     	}
     }
     
-    
+    @Transactional
     public UsersDetail getUserById (int userId) {
         Session session = sessionFactory.openSession();
         return (UsersDetail) session.get(UsersDetail.class, userId);
     }
-
+    @Transactional
     public List<UsersDetail> getAllUsers() {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from UsersDetail");
@@ -84,7 +85,7 @@ public class UsersDetailDaoImpl implements UsersDetailDao{
 
         return usersDetail;
     }
-
+    @Transactional
     public UsersDetail getUserByUsername (String username) {
         Session session = sessionFactory.openSession();
         Query query = session.createQuery("from UsersDetail where username = ?");

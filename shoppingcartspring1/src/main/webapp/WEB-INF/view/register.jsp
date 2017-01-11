@@ -1,8 +1,9 @@
 
 <!DOCTYPE html>
 <html>
-<%-- <%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %> --%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>z
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <head>
 <!-- Latest compiled and minified CSS -->
@@ -49,28 +50,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--content-->
 <div class=" container">
 <div class=" register">
-	
-		  	  <form:form action="/register" method="post" commandName="usersDetail">
+<div class="error" style="color: #ff0000;">${usernameError}${emailError}${userPhoneError }</div>
+						
+						
+						<c:if test="${not empty message}">
+								<div class="error" style="color: #ff0000;">${message}${usernameError}</div>
+						</c:if> 
+						
+		  	  <form:form action="register" method="post" commandName="usersDetail">
 				 <div class="col-md-6 register-top-grid">
+				 
+				 
 					<h3>Personal infomation</h3>
 					 <div>
-						<span>First Name</span>
+					 <form:errors path="FirstName" cssStyle="color: #ff0000" />
+					 <span>First Name</span>
 						<form:input type="text" placeholder="Enter First name" path="FirstName" /> 
 					 </div>
 					 <div>
-						<span>Last Name</span>
+					 <form:errors path="LastName" cssStyle="color: #ff0000" />
+					 	<span>Last Name</span>
 						<form:input type="text" placeholder="Enter Last name" path="LastName" /> 
 					 </div>
 					 <div>
+					 <form:errors path="username" cssStyle="color: #ff0000" />
 						<span>User Name</span>
-						<form:input type="text" placeholder="Enter User name" path="LastName" /> 
+						<form:input type="text" placeholder="Enter User name" path="username" /> 
 					 </div>
 					 <div>
-						 <span>Email Address</span>
+					 <form:errors path="userEmail" cssStyle="color: #ff0000" />
+					 	 <span>Email Address</span>
 						 <form:input type="text" placeholder="Enter Email address" path="userEmail"/> 
 					 </div>
 					 <div>
-						 <span>User Phone </span>
+					 <form:errors path="userPhone" cssStyle="color: #ff0000" />
+					 	 <span>User Phone </span>
 						 <form:input type="text" placeholder="Enter userPhone number" path="userPhone"/> 
 					 </div>
 					   <!-- <a class="news-letter" href="#">
@@ -78,16 +92,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					   </a> -->
 					 </div>
 				     <div class="col-md-6 register-bottom-grid">
-						    <h3>Login information</h3>
-							 <div>
+				    
+				     
+						   <!--  <h3>Login information</h3>
+	 -->						 <div>
 								<span>Password</span>
+								<form:errors path="password" cssStyle="color: #ff0000" />
 								<form:input type="password" placeholder="Enter password " path="password"/>
 							 </div>
-							 <div>
+		<%-- 					 <div>
 								<span>Confirm Password</span>
 								<form:input type="password" placeholder="Confirm password" path="password"/>
 							 </div>
-							 <input type="submit" value="submit">
+		 --%>					 <input type="submit" value="submit">
 							
 					 </div>
 					 <div class="clearfix"> </div>

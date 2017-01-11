@@ -1,4 +1,4 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div class="header">
 	<div class="header-top">
 		<div class="container">
@@ -148,7 +148,7 @@ search-scripts
 									</ul>		
 								</div>							
 							</div>
-							<div class="col1">
+							<!-- <div class="col1">
 								<div class="h_nav">
 									
 									<ul>
@@ -164,12 +164,75 @@ search-scripts
 										<li><a href="products">Pillow Protector</a></li>
 									</ul>	
 								</div>												
-							</div>
+							</div> -->
 						  </div>
 						</div>
 			    </li>
-				<li><a class="color4" href="login">Login</a></li>				
+				<li><a class="color4" href="loginPage">Login</a></li>				
 				<li><a class="color6" href="contact">Contact</a></li>
+				
+				
+				<div class="col-sm-8">
+						<div class="login pull-right">
+
+
+						<c:choose>
+							<c:when test="${pageContext.request.userPrincipal.name != null}">							
+							
+								<i class="fa fa-user-admin"></i>
+								<a>Hello, ${pageContext.request.userPrincipal.name}</a>
+								<a href="<c:url value="/j_spring_security_logout"/>">
+								<i class="fa fa-sign-out"></i>Sign Out</a>
+							</c:when>						
+							<c:otherwise>
+						 </c:otherwise>
+						</c:choose> 
+						
+						
+						
+                                        <c:choose>
+												<c:when test="${pageContext.request.userPrincipal.name != null}">
+													<c:if test="${pageContext.request.userPrincipal.name == 'Admin'}">
+																							<li><a href="<c:url value='/categories'/>">Category</a></li>
+														<li><a href="<c:url value="/suppliers"/>">Supplier</a></li>
+														<li><a href="<c:url value="/products"/>">Product</a></li>
+														
+													</c:if>
+																						<c:if test="${pageContext.request.userPrincipal.name != 'Admin'}">
+													
+														<li><a href="<c:url value="/user/cart"/>">Cart</a></li>
+													
+													</c:if>
+													</c:when>
+											
+													<c:otherwise>
+											
+														
+													
+													</c:otherwise>
+											</c:choose>
+
+                                    </ul>
+                                </li>
+							
+								
+							<!-- ========== FULL WIDTH MEGAMENU END ================== -->
+							
+							</ul>
+					</div>
+
+				</div>
+
+
+			</div>
+			<!-- /#navbar -->
+
+		</div>
+
+	</div>
+						
+						</div>
+						</div>
 			  </ul> 
 			</div>
 				

@@ -1,4 +1,6 @@
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,17 +50,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="account">
 		<div class="account-pass">
 		<div class="col-md-8 account-top">
-			<form action="#" method="post">
-				
+			<form name="login"
+							action="<c:url value='/j_spring_security_check' />" method="post">
+
+							<c:if test="${not empty error}">
+								<div class="error" style="color: #ff0000;">${error}</div>
+							</c:if>
+							
+							<div class="span9 center">
+								<c:if test="${not empty msg}">
+									<div class="msg">${msg} </div>
+								</c:if>
+							</div>
 			<div> 	
-				<span>Email</span>
-				<input type="text"> 
+				<span>Username</span>
+				<input type="text" id="username" name="username" class="form-control" placeholder="user name"/>
+				
 			</div>
 			<div> 
 				<span >Password</span>
-				<input type="password">
+				<input type="password" id="password" name="password" class="form-control" placeholder="password"/>
 			</div>				
 				<input type="submit" value="Login"> 
+				<!-- LOOK HERE -->
+
+								<input type="hidden" name="${_csrf.parameterName}"
+									value="${_csrf.token}" />
 			</form>
 		</div>
 		<div class="col-md-4 left-account ">

@@ -15,13 +15,7 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/Registrationsucess")
-	public String getRegistrationsucess()
-	{
-		System.out.println(" Registrationsucess");
-		return "index";
-	}
-  
+	
 	@RequestMapping("/index")
 	public String getindex1()
 	{
@@ -42,12 +36,12 @@ public class HomeController {
 		return "contact";
 	}
 
-	@RequestMapping("/login")
+	/*@RequestMapping("/login")
 	public String getlogin()
 	{
 		System.out.println("login page");
 		return "login";
-	}
+	}*/
 
 	@RequestMapping("/product")
 	public String getproduct()
