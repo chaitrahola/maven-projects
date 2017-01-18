@@ -4,7 +4,7 @@
   <groupId>com.niit</groupId>
   <artifactId>shoppingcartspring1</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>shoppingcartspring1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -119,7 +119,8 @@
 			<artifactId>spring-security-config</artifactId>
 			<version>3.2.5.RELEASE</version>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/javax.el/javax.el-api -->
+		
 
 
   

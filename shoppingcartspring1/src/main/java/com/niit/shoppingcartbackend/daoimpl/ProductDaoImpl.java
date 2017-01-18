@@ -1,4 +1,4 @@
-package com.niit.shoppingcartbackend.daoimpl;
+/*package com.niit.shoppingcartbackend.daoimpl;
 
 
 
@@ -65,3 +65,4 @@ public class ProductDaoImpl implements ProductDAO {
 
 }
 
+*/
